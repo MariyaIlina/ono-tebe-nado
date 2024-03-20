@@ -125,7 +125,7 @@ body {
 }
 
 .no-letter-spacing {
-
+letter-spacing: 0;
 }
 
 .cover__description {
@@ -134,6 +134,7 @@ body {
   align-items: center;
   padding-bottom: 50px;
   color: white;
+  justify-content: flex-end;
 }
 
 .cover__description-text {
@@ -178,16 +179,15 @@ body {
   display: flex;
   flex-direction: row;
   gap: 25px;
-  margin: 0 auto 30px;
+  margin-bottom:  30px;
   list-style-type: none;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .lots__card-list-item {
-  width: 334px;
-  min-height: 600px;
   color: white;
   position: relative;
+  width: 100%;
 }
 
 .card-link {
@@ -198,6 +198,7 @@ body {
 
 .card {
   display: flex;
+  min-width: 334px;
   flex-direction: column;
   justify-content: space-between;
   padding: 50px 40px;
@@ -246,7 +247,7 @@ body {
 
 .about {
   display: grid;
-  grid-template-columns: 430px 597px;
+  grid-template-columns: 430px minmax(597px, auto);
   grid-template-rows: repeat(2, autofill);
   align-items: center;
   column-gap: 25px;
